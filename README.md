@@ -12,7 +12,7 @@
 
 ## Key configuration
 
-*##Note- always use 'cd' in cli whenever you want to open a folder*
+*Note- always use 'cd' in cli whenever you want to open a folder*
 ### a.Run the command open ~/.ssh/config
 ### b.If the terminal responds saying that the file does not exist, run touch ~/.ssh/config to create a new file.
 ### c.Pastes these contents in the file: Host * AddkeysToAgent yes UseKeyChain yes IdentityFile ~/.ssh/id_rsa
