@@ -1,9 +1,10 @@
-## For ssh key setup in windows/mac/ubuntu
+**## For ssh key setup in windows/mac/ubuntu**
 
 ### ssh-keygen -t rsa -b 4096 -C "YOUR Email Id here"
 
 #### if this command does not run or is not supported on your laptop, please run the command below and for the remainder of this setup,please use the string ed25519 in place of rsa.. If the command above runs successfully , please skip to step b.
 
+**## Alternate command**
 ### ssh-keygen -t ed25519 -C "ENTER YOUR Mail here"
 
 #### Hit Enter for the following prompts and do not set a passphrase for your key
@@ -11,6 +12,7 @@
 
 ## Key configuration
 
+*##Note- always use 'cd' in cli whenever you want to open a folder*
 ### a.Run the command open ~/.ssh/config
 ### b.If the terminal responds saying that the file does not exist, run touch ~/.ssh/config to create a new file.
 ### c.Pastes these contents in the file: Host * AddkeysToAgent yes UseKeyChain yes IdentityFile ~/.ssh/id_rsa
